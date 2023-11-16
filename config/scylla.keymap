@@ -13,7 +13,7 @@
 	&led_strip {
 		chain-length = <58>;
 		chain-length = <29>;
-	};
+	}
 
     macros {
         sqt_spc: sqt_spc {
