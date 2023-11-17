@@ -3,7 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-
+#include <dt-bindings/zmk/ext_power.h>
+#
 #define DEF 0
 #define SYM 1
 #define INT 2
@@ -63,7 +64,7 @@
         SYM {
             bindings = <
 &out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &trans          &trans           &trans            &trans             &out OUT_BLE
-&grave_spc       &ext_power EP_TOG                          &trans                           &trans                            &trans                            &caret_spc                          &none            &trans          &trans           &trans            &trans             &trans
+&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &none            &trans          &trans           &trans            &trans             &trans
 &rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp F6           &kp LEFT        &kp DOWN         &kp UP            &kp RIGHT          &trans
 &trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
                                                                                   &trans                            &kp SPACE                         &trans                              &kp BACKSPACE    &kp SPACE       &kp RIGHT
