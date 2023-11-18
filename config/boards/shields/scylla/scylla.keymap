@@ -7,7 +7,6 @@
 #define INT 2
 
 
-/* Uncomment this block if using RGB
 &led_strip {
     chain-length = <29>;
     // chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
