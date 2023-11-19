@@ -69,10 +69,10 @@
 
         SYM {
             bindings = <
-&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF   &trans             &out OUT_BLE
-&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &kp LS(N6)       &kp LS(N7)       &kp LS(N8)       &kp LS(N9)        &kp LS(N0)         &trans
-&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp F6           &kp LEFT         &kp DOWN         &kp UP            &kp RIGHT          &trans
-&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI           &rgb_ug RGB_EFF   &trans             &out OUT_BLE
+&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &kp LS(N6)       &kp LS(N7)       &kp LS(N8)                &kp LS(N9)        &kp LS(N0)         &trans
+&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp F6           &kp LEFT         &kp DOWN                  &kp UP            &kp RIGHT          &trans
+&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp NON_US_BSLH  &kp LS(NON_US_BACKSLASH)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
                                                                                   &trans                            &kp SPACE                         &trans                              &kp BACKSPACE    &kp SPACE        &kp RIGHT
                                                                                                                     &trans                            &trans                              &kp ESC          &kp RETURN
             >;
@@ -81,7 +81,7 @@
         INT {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none         &bt BT_CLR       &none     &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &none         &none
-&none         &kp RS(N1)    &kp LS(N2)    &kp RS(N3)    &kp RA(N4)    &kp RS(N5)       &kp AMPS  &kp FSLH         &kp LPAR         &kp RPAR         &kp EQUAL     &none
+&none         &kp RS(N1)    &kp LS(N2)    &kp RS(N3)    &kp RA(N4)    &kp RS(N5)       &kp AMPS  &kp RA(N7)       &kp RA(N8)       &kp RA(N9)       &kp RA(N0)    &none
 &none         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &none     &kp MINUS        &kp EQUAL        &none            &trans        &none
 &none         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &none     &kp BSLH         &kp C_NEXT       &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PLAY_PAUSE
                                           &kp LG(LEFT)  &kp LG(UP)    &kp LG(RIGHT)    &none     &none            &none
