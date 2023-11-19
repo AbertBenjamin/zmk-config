@@ -11,6 +11,7 @@
 
 &led_strip {
     chain-length = <29>;
+
     // chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
     // chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
@@ -51,8 +52,6 @@
     };
 };
 
- 
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -70,22 +69,22 @@
 
         SYM {
             bindings = <
-&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &trans          &trans           &trans            &trans             &out OUT_BLE
-&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &none            &trans          &trans           &trans            &trans             &trans
-&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp F6           &kp LEFT        &kp DOWN         &kp UP            &kp RIGHT          &trans
-&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-                                                                                  &trans                            &kp SPACE                         &trans                              &kp BACKSPACE    &kp SPACE       &kp RIGHT
+&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF   &trans             &out OUT_BLE
+&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &none            &trans           &trans           &trans            &trans             &trans
+&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp F6           &kp LEFT         &kp DOWN         &kp UP            &kp RIGHT          &trans
+&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                                                                                  &trans                            &kp SPACE                         &trans                              &kp BACKSPACE    &kp SPACE        &kp RIGHT
                                                                                                                     &trans                            &trans                              &kp ESC          &kp RETURN
             >;
         };
 
         INT {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none         &bt BT_CLR       &none  &none  &none   &none  &none   &none
-&none         &none         &none         &none         &none         &none            &none  &none  &trans  &none  &none   &none
-&none         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &none  &none  &trans  &none  &trans  &none
-&none         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &none  &none  &none   &none  &none   &none
-                                          &kp LG(LEFT)  &kp LG(UP)    &kp LG(RIGHT)    &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none         &bt BT_CLR       &none  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &none   &none
+&none         &none         &none         &none         &none         &none            &none  &none            &trans           &none            &none   &none
+&none         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &none  &none            &trans           &none            &trans  &none
+&none         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &none  &none            &none            &none            &none   &none
+                                          &kp LG(LEFT)  &kp LG(UP)    &kp LG(RIGHT)    &none  &none            &none
                                                         &kp LG(DOWN)  &none            &none  &none
             >;
         };
