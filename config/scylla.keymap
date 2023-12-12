@@ -69,23 +69,23 @@
 
         SYM {
             bindings = <
-&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI           &rgb_ug RGB_EFF  &trans         &out OUT_BLE
-&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &kp LS(N6)       &kp LS(N7)       &kp LS(N8)                &kp LS(N9)       &kp LS(N0)     &trans
-&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp LEFT         &kp DOWN         &kp UP                    &kp RIGHT        &trans         &trans
-&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12          &kp NON_US_BSLH  &kp LS(NON_US_BACKSLASH)  &kp GRAVE        &kp LS(GRAVE)  &trans
-                                                                                  &trans                            &kp SPACE                         &trans                              &kp BACKSPACE    &kp SPACE        &kp RIGHT
-                                                                                                                    &trans                            &trans                              &kp ESC          &kp RETURN
+&out OUT_TOG     &rgb_ug RGB_COLOR_HSB(0,63,42)  &rgb_ug RGB_COLOR_HSB(54,54,43)  &rgb_ug RGB_COLOR_HSB(111,55,42)  &rgb_ug RGB_COLOR_HSB(230,56,49)  &rgb_ug RGB_COLOR_HSB(297,56,47)    &trans         &rgb_ug RGB_HUI  &rgb_ug RGB_SAI           &rgb_ug RGB_EFF  &trans         &out OUT_BLE
+&grave_spc       &ext_power EP_TOG               &trans                           &trans                            &trans                            &caret_spc                          &kp LS(N6)     &kp LS(N7)       &kp LS(N8)                &kp LS(N9)       &kp LS(N0)     &trans
+&rgb_ug RGB_TOG  &trans                          &trans                           &trans                            &trans                            &trans                              &kp LEFT       &kp DOWN         &kp UP                    &kp RIGHT        &trans         &trans
+&trans           &trans                          &trans                           &trans                            &trans                            &trans                              &kp F12        &kp NON_US_BSLH  &kp LS(NON_US_BACKSLASH)  &kp GRAVE        &kp LS(GRAVE)  &trans
+                                                                                  &trans                            &kp SPACE                         &trans                              &kp BACKSPACE  &kp SPACE        &kp RIGHT
+                                                                                                                    &trans                            &trans                              &kp ESC        &kp RETURN
             >;
         };
 
         INT {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none         &none         &bt BT_CLR       &none     &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &none         &none
-&none         &kp RS(N1)    &kp LS(N2)    &kp RS(N3)    &kp RS(N4)    &kp RS(N5)       &kp AMPS  &kp RA(N7)       &kp RA(N8)       &kp RA(N9)       &kp RA(N0)    &none
-&none         &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp F6    &kp MINUS        &kp EQUAL        &none            &trans        &none
-&none         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &kp F12   &kp BSLH         &kp C_NEXT       &kp C_VOL_DN     &kp C_VOL_UP  &trans
-                                          &kp LG(LEFT)  &kp LG(UP)    &kp LG(RIGHT)    &none     &none            &none
-                                                        &kp LG(DOWN)  &none            &none     &none
+&bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &none         &none         &bt BT_CLR       &none     &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &none         &none
+&rgb_ug RGB_TOG  &kp RS(N1)    &kp LS(N2)    &kp RS(N3)    &kp RS(N4)    &kp RS(N5)       &kp AMPS  &kp RA(N7)       &kp RA(N8)       &kp RA(N9)       &kp RA(N0)    &none
+&none            &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp F6    &kp MINUS        &kp EQUAL        &none            &trans        &none
+&none            &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &kp F12   &kp BSLH         &kp C_NEXT       &kp C_VOL_DN     &kp C_VOL_UP  &trans
+                                             &kp LG(LEFT)  &kp LG(UP)    &kp LG(RIGHT)    &none     &none            &none
+                                                           &kp LG(DOWN)  &none            &none     &none
             >;
         };
     };
