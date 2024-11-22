@@ -16,6 +16,14 @@
     // chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
 
+&mt { 
+  tapping-term-ms = <350>;
+  flavor = "tap-preferred";
+  require-prior-idle-ms = <100>;
+  hold-trigger-on-release;
+
+};
+
 / {
     macros {
         sqt_spc: sqt_spc {
