@@ -106,5 +106,16 @@
                                 &trans  &trans    &trans    &trans
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &kp INT3    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB     &kp Q         &kp W         &kp E         &kp R               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &lt 3 ESC   &kp A         &kp S         &kp D         &kp F               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHIFT  &kp Z         &kp X         &kp C         &kp V               &trans  &trans  &trans  &trans  &trans  &trans
+                                  &mo 1         &kp SPACE     &kp LS(LEFT_WIN)    &trans  &trans  &trans
+                                                &kp LCTRL     &kp LEFT_ALT        &trans  &trans
+            >;
+        };
     };
 };
